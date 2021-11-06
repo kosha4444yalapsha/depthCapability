@@ -78,6 +78,7 @@
   width: 8%;
   margin-left: 46%;
   margin-top: 9%;
+  cursor: pointer;
 }
 
 .zagolovok{
@@ -139,6 +140,11 @@
 
 
   <body>
+    <audio id=vc1>
+
+           <source src="media/b1.mp3" type="audio/mpeg">
+
+    </audio>
 
     <img class="ava"src="media/ava.png" alt="">
     <p class="oglavlenie">РЅРµРёР·РІРµСЃС‚РЅС‹Р№ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ</p>
@@ -149,8 +155,17 @@
     я делаю шаг вперёд , но шаг назад я сделать уже не могу..
     </div>
        </div>
+       <div class="cv">
 
-    <img class="exit"src="media/welcom.gif" alt="">
+
+           <div id="cv">
+
+              <img class="exit"src="media/welcom.gif" alt="">
+
+          </div>
+
+       </div>
+
     <p class="zagolovok">ВОЗМОЖНОСТЬ ГЛУБИНЫ</p>
     <img class="sup"src="media/post.png" alt="">
     <p class="txt1">
@@ -172,9 +187,21 @@
 Мне очень холодно, и в этот момент я чувствую, что мне не хватает воздуха.
 В голове появляется голос, который говорит моим родителям, что это мои последние мгновения,
 а потом я засыпаю.</p>
-<footer> <img class="voronka"src="media/vor.png" alt="">
+<footer> <img class="voronka"src="media/vor2.png" alt="">
 </footer>
 
+
+<script>
+
+    var cv = document.getElementById('cv'),
+        vc1 = document.getElementById('vc1');
+
+        cv.addEventListener('click', fPlay, false);
+        function fPlay() {
+        vc1.play();
+    }
+
+</script>
 
   </body>
 
